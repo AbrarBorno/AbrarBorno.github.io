@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../fonts/leaguespartan-bold.eot');
+    src: url('../fonts/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguespartan-bold.woff2') format('woff2'),
+         url('../fonts/leaguespartan-bold.woff') format('woff'),
+         url('../fonts/leaguespartan-bold.ttf') format('truetype'),
+         url('../fonts/leaguespartan-bold.svg#league_spartanbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'League Spartan';
+}
+
+.topnav {
+    overflow: hidden;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.topnav > div {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.topnav > div > a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.matte-background {
+    background-color: #000000;
+    background-image: url("../img/matte.png");
+}
+
+.opener-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.continuation-section {
+    background-color: #ffffff;
+    padding-bottom: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    .continuation-section {
+        flex-direction: column;
+    }
+}
+
+.continuation-section > div {
+    width: 35%;
+}
+
+.opener-text {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5;
+    z-index: 5;
+    text-shadow: 0 0 30px #000000;
+}
+
+.opener-name {
+    font-size: 50px;
+}
+
+.exlink-general {
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.opener-overlay-coffee {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    animation: slideFromRight 0.6s;
+}
+
+.opener-overlay-plant {
+    position: absolute;
+    top: 400px;
+    left: 70px;
+    animation: slideFromLeft 0.6s;
+}
+
+.cive-list > li {
+    list-style-type: none;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.gen-list-icons {
+    max-width: 17px;
+    margin-right: 8px;
+}
+
+.personal-section {
+    background-color: #ffffff;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    .personal-section {
+        flex-direction: column;
+    }
+}
+
+.personal-section > div {
+    width: 40%;
+}
+
+.skills-section {
+    background-color: #ffffff;
+    /* height: 100vh; */
+    padding-bottom: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-section > div {
+    width: 80%;
+}
+
+.languages-list {
+    list-style-type: none;
+    font-size: 20px;
+    width: 100%;
+}
+
+.languages-list > li {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.languages-list > li > div {
+    display: inline-block;
+    height: 20px;
+}
+
+@media (max-width: 800px) {
+    .languages-list > li > div {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+.language-name {
+    width: 10%;
+}
+
+.language-bar {
+    width: 85%;
+    background-color: #d1d1d1;
+    border-radius: 10px;
+}
+
+.language-bar > div {
+    background-color: rgb(0, 194, 145);
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+.table-section {
+    background-color: #161616;
+    color: #ffffff;
+    padding-bottom: 120px;
+    padding-top: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-section > div {
+    width: 80%;
+}
+
+.rtable {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 20px;
+    border-color: #161616;
+}
+
+.rtable td, th {
+    width: 12%;
+    background-color: #333333;
+    border-color: #161616;
+    border-style: solid;
+    border-width: 2px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+    text-align: center;
+}
+
+.quote-section {
+    background-image: url("../img/ocean.jpg");
+    background-size: cover;
+    color: #ffffff;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5;
+    z-index: 5;
+    text-shadow: 0 0 30px #000000;
+}
+
+.quote-author {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5;
+    z-index: 5;
+    text-shadow: 0 0 30px #000000;
+}
+
+.footer-section {
+    background-color: #161616;
+    color: #ffffff;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section > div {
+    width: 80%;
+}
+
+.footer-icon {
+    display: inline-block;
+    color: #f2f2f2;
+    width: 30px;
+}
