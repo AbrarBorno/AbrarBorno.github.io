@@ -1,3 +1,9 @@
+/**
+ * Author: Abrar Mahmud
+ * ID: 18201147
+ * email: abrar.mahmud@g.bracu.ac.bd
+*/
+
 @font-face {
     font-family: 'League Spartan';
     src: url('../fonts/leaguespartan-bold.eot');
@@ -64,11 +70,6 @@ body {
     flex-direction: column;
 }
 
-@media (max-width: 800px) {
-    .opener-section {
-        height: 140vh;
-    }
-}
 
 @keyframes upAndDownSwing {
     0% {
@@ -97,21 +98,11 @@ body {
     flex-direction: row;
 }
 
-@media (max-width: 800px) {
-    .continuation-section {
-        flex-direction: column;
-    }
-}
 
 .continuation-section > div {
     width: 35%;
 }
 
-@media (max-width: 800px) {
-    .continuation-section > div {
-        width: 80%;
-    }
-}
 
 .continuation-section > div > img {
     height: 100%;
@@ -170,11 +161,6 @@ body {
     animation: slideFromLeft 0.6s;
 }
 
-@media (max-width: 800px) {
-    .opener-overlay-plant {
-        top: 812px;
-    }
-}
 
 .cive-list > li {
     list-style-type: none;
@@ -198,21 +184,11 @@ body {
     flex-direction: row;
 }
 
-@media (max-width: 800px) {
-    .personal-section {
-        flex-direction: column;
-    }
-}
 
 .personal-section > div {
     width: 40%;
 }
 
-@media (max-width: 800px) {
-    .personal-section > div {
-        width: 80%;
-    }
-}
 
 .skills-section {
     background-color: #ffffff;
@@ -245,12 +221,6 @@ body {
     height: 20px;
 }
 
-@media (max-width: 800px) {
-    .languages-list > li > div {
-        display: block;
-        margin-bottom: 5px;
-    }
-}
 
 .language-name {
     width: 10%;
@@ -262,15 +232,6 @@ body {
     border-radius: 10px;
 }
 
-@media (max-width: 800px) {
-    .language-name {
-        width: 100%;
-    }
-    
-    .language-bar {
-        width: 85%;
-    }
-}
 
 .language-bar > div {
     background-color: rgb(0, 194, 145);
@@ -362,4 +323,44 @@ body {
     display: inline-block;
     color: #f2f2f2;
     width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 800px) {
+    .opener-section {
+        height: 140vh;
+    }
+    
+    .continuation-section {
+        flex-direction: column;
+    }
+
+    .continuation-section > div {
+        width: 80%;
+    }
+
+    .opener-overlay-plant {
+        top: 812px;
+    }
+
+    .personal-section {
+        flex-direction: column;
+    }
+
+    .personal-section > div {
+        width: 80%;
+    }
+
+    .languages-list > li > div {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .language-name {
+        width: 100%;
+    }
+    
+    .language-bar {
+        width: 85%;
+    }
 }
