@@ -7,23 +7,26 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>My Info</title>
 </head>
-<body class="matte-background">
-    <div class="topnav">
-        <div>
-            <a href="#">Home</a>
-            <a href="#personal-section">About Me</a>
-            <a href="#continuation-section">My Hobbies</a>
-            <a href="#skills-section">My Skills</a>
+<body>
+    <div class="full-wrapper matte-background">
+        <div class="topnav">
+            <div>
+                <a href="#">Home</a>
+                <a href="#personal-section">About Me</a>
+                <a href="#continuation-section">My Hobbies</a>
+                <a href="#skills-section">My Skills</a>
+            </div>
         </div>
-    </div>
-    <div id="opener-section" class="opener-section">
-        <img class="opener-overlay-coffee" src="./img/coffee1.png" alt="Coffee">
-        <img class="opener-overlay-plant"  src="./img/plant12.png" alt="Plant">
-        <p class="opener-text">
-            Hi, I'm<br>
-            <span class="opener-name">Abrar Mahmud</span><br>
-            I study at <span><a class="exlink-general" href="https://www.bracu.ac.bd/">BRAC University</a></span>
-        </p>
+        <div id="opener-section" class="opener-section">
+            <img class="opener-overlay-coffee" src="./img/coffee1.png" alt="Coffee">
+            <img class="opener-overlay-plant" src="./img/plant12.png" alt="Plant">
+            <p class="opener-text">
+                Hi, I'm<br>
+                <span class="opener-name">Abrar Mahmud</span><br>
+                I study at <span><a class="exlink-general" href="https://www.bracu.ac.bd/">BRAC University</a></span>
+            </p>
+            <a href="#personal-section" class="chevron"><img src="./img/icons/chevron-down-solid.svg" alt="chevron"></a>
+        </div>
     </div>
     <div id="personal-section" class="personal-section">
         <div>
@@ -32,7 +35,8 @@
         <div>
             <h1 style="font-size: 50px;">About Myself</h1>
             <p>
-                I'm from Dhaka, Bangladesh. I'm currently 24 years old. I'm currently at the final year of my Computer Science and Engineering Degree at BRAC University.
+                I'm from <a class="exlink-general" href="https://en.wikipedia.org/wiki/Dhaka">Dhaka, Bangladesh</a>. I'm currently 24 years old. I'm currently
+                in the final year of my Computer Science and Engineering Degree at BRAC University.
                 For most of my student life, I taught myself to code rather than relying on institutional education. I also learnt to do 3D modelling as a Hobby.
                 I'm also interested in low-level programming and reverse engineering, both in case of softwares and hardwares.
             </p>
@@ -46,11 +50,26 @@
         <div>
             <h1 style="font-size: 50px;">My Hobbies</h1>
             <ul class="cive-list">
-                <li><img src="./img/icons/cube-solid.svg" alt="cube" class="gen-list-icons">Graphics Programming</li>
-                <li><img src="./img/icons/cubes-solid.svg" alt="cubes" class="gen-list-icons">3D Modelling & Rendering using <a class="exlink-general" href="https://www.blender.org/">Blender</a></li>
-                <li><img src="./img/icons/gear-solid.svg" alt="gear" class="gen-list-icons">Reverse Engineering Stuffs</li>
-                <li><img src="./img/icons/location-dot-solid.svg" alt="pinpoint" class="gen-list-icons">Exploring New Locations</li>
-                <li><img src="./img/icons/play-solid.svg" alt="play" class="gen-list-icons">Watching Documentaries</li>
+                <li>
+                    <img src="./img/icons/cube-solid.svg" alt="cube" class="gen-list-icons">
+                    <a class="exlink-general" href="https://en.wikipedia.org/wiki/Computer_graphics">Graphics</a> Programming
+                </li>
+                <li>
+                    <img src="./img/icons/cubes-solid.svg" alt="cubes" class="gen-list-icons">
+                    3D Modelling & Rendering using <a class="exlink-general" href="https://www.blender.org/">Blender</a>
+                </li>
+                <li>
+                    <img src="./img/icons/gear-solid.svg" alt="gear" class="gen-list-icons">
+                    <a class="exlink-general" href="https://en.wikipedia.org/wiki/Reverse_engineering">Reverse Engineering</a> Stuffs
+                </li>
+                <li>
+                    <img src="./img/icons/location-dot-solid.svg" alt="pinpoint" class="gen-list-icons">
+                    <a class="exlink-general" href="https://www.tripadvisor.com/">Exploring</a> New Locations
+                </li>
+                <li>
+                    <img src="./img/icons/play-solid.svg" alt="play" class="gen-list-icons">
+                    Watching Documentaries on <a class="exlink-general" href="https://www.youtube.com/">YouTube</a>
+                </li>
             </ul>
         </div>
         <div>
@@ -104,13 +123,13 @@
                     </div>
                 </li>
                 <li>
-                    <div class="language-name">ASM x86</div>
+                    <div class="language-name">ASM-x86</div>
                     <div class="language-bar">
                         <div style="width: 25%;"></div>
                     </div>
                 </li>
                 <li>
-                    <div class="language-name">ASM MIPS</div>
+                    <div class="language-name">ASM-MIPS</div>
                     <div class="language-bar">
                         <div style="width: 15%;"></div>
                     </div>
