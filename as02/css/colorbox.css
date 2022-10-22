@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 98vh;
+    font-size: 36px;
+}
+
+body > div {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    body > div {
+        flex-direction: column;
+    }
+}
+
+#quotebox {
+    width: fit-content;
+    word-wrap: break-word;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 4px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-style: italic;
+}
+
+.styles {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.st {
+    display: inline-block;
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 3px;
+}
+
+.sample-1 {
+    background: rgb(34,193,195);
+    background: linear-gradient(14deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    color: #ffffff;
+    border: 1px solid rgb(11, 75, 194);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+}
+
+.sample-2 {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    color: #000000;
+    border: 1px solid rgb(194, 11, 124);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+}
+
+.sample-3 {
+    background: rgb(37,1,128);
+    background: linear-gradient(149deg, rgba(37,1,128,1) 0%, rgba(196,62,62,1) 100%);
+    color: #ffffff;
+    border: 1px solid rgb(11, 194, 93);
+    font-family: 'Calibri Light', Arial, sans-serif;
+    font-size: 28px;
+}
+
+.sample-4 {
+    background: rgb(155,255,121);
+    background: linear-gradient(90deg, rgba(155,255,121,1) 13%, rgba(255,115,188,1) 100%);
+    color: #000000;
+    border: 1px solid rgb(176, 194, 11);
+    font-family: Georgia, serif;
+    font-size: 32px;
+}

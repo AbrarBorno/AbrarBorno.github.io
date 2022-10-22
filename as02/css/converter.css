@@ -1,0 +1,62 @@
+body {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 98vh;
+    font-size: 36px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body > div > input {
+    height: 32px;
+    transform: translateY(-6px);
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 24px;
+}
+
+body > div > select {
+    height: 36px;
+    transform: translateY(-6px);
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 24px;
+}
+
+body > div > button {
+    height: 36px;
+    transform: translateY(-7px);
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(20, 82, 255);
+    color: rgb(255, 255, 255);
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 24px;
+    transition: all 0.2s ease-in-out;
+}
+
+body > div > button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgb(20, 82, 255);
+}
+
+body > div > p {
+    text-align: center;
+}
+
+.greyholder {
+    font-style: italic;
+    color: rgb(102, 102, 102);
+    user-select: none;
+}
